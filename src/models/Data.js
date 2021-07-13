@@ -1,26 +1,26 @@
 const mongoose = require("mongoose");
 
 const dataSchema = mongoose.Schema({
-    Fecha: {
+    fecha: {
         type: String,
         required: true
     },
-    Hora: {
+    hora: {
         type: String,
         required: true
     },
-    Consumo: {
+    consumo: {
         type: String,
         required: true
     },
-    Precio: {
+    precio: {
         type: String,
         required: true
     },
-    Coste: {
+    coste: {
         type: String,
         required: true
     },
 })
 
-module.exports = mongoose.model("Data", dataSchema)
+module.exports = mongoose.model("consumo", dataSchema, "consumo")

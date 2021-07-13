@@ -8,7 +8,7 @@ router
     .post(controller.createData)
 
 router.route("/data/:id")
-    .delete()
-    .put()
+    .delete(controller.deleteData)
+    .put(controller.updateData)
 
 module.exports = router;

@@ -8,7 +8,7 @@ function serverBootstraping() {
 
     server.on("listening", function() {
         console.info(
-            `The server for Wellnes Test App is running on port: http://localhost:${config.server.port}`
+            `The server for Wellness Test App is running on port: http://localhost:${config.server.port}`
         );
         loader(app);
     });
