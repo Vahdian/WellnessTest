@@ -1,4 +1,5 @@
 const express = require("express");
+const config = require("./config")
 
 function serverBootstraping() {
     const app = express();
@@ -8,7 +9,7 @@ function serverBootstraping() {
         console.info(
             `The server for Wellnes Test App is running on port: http://localhost:${config.server.port}`
         );
-        loader(app);
+        //loader(app);
     });
 }
 
