@@ -23,9 +23,11 @@ export default function LandingPage() {
   return (
     <div className="billsPage">
       <h1>REGISTRO DE FACTURAS</h1>
-      <button className="btn btn-outline-dark btn-lg billsPage--button">
-        + Crear nueva entrada
-      </button>
+      <Link to="/nuevo">
+        <button className="btn btn-outline-dark btn-lg billsPage--button">
+          + Crear nueva entrada
+        </button>
+      </Link>
       <table className="table table-striped">
         <thead>
           <tr>

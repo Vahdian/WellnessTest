@@ -5,3 +5,14 @@
         right: 1rem;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .billsPage {
+        &--button {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+    }
+
+}

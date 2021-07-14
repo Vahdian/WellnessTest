@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { API } from "../../../shared/consts/api.const";
 import "./BillPageDetail.scss";
+import { useForm } from "react-hook-form";
 
 export default function BillPageDetail() {
   const { id } = useParams();
@@ -17,43 +18,59 @@ export default function BillPageDetail() {
 
   useEffect(getAPIDataDetail, []);
 
+  const { register, handleSubmit, errors, reset } = useForm();
+
+  function onSubmit(facturaEditada) {
+    console.log(facturaEditada);
+    API.put("data/" + id, facturaEditada).then((res) => {
+      console.log(res.data);
+    });
+  }
+
   return (
     <div className="billPageDetail">
-      <h1>BILL DETAILS</h1>
-      <form className="billPageDetail--form">
-        <label for="fecha">FECHA</label>
+      <h1>EDIT BILL DETAILS</h1>
+      <form className="billPageDetail--form" onSubmit={handleSubmit(onSubmit)}>
+        <label htmlFor="fecha">FECHA</label>
         <input
           className="billPageDetail--form--input"
-          value={detail.fecha}
+          placeholder={detail.fecha}
           name="fecha"
+          {...register("fecha", { required: true })}
         ></input>
-        <label for="hora">HORA</label>
+        <label htmlForfor="hora">HORA</label>
         <input
           className="billPageDetail--form--input"
-          value={detail.hora}
-          name="fecha"
+          placeholder={detail.hora}
+          name="hora"
+          {...register("hora", { required: true })}
         ></input>
-        <label for="hora">CONSUMO (kWh)</label>
+        <label htmlForfor="consumo">CONSUMO (kWh)</label>
         <input
           className="billPageDetail--form--input"
-          value={detail.consumo}
+          placeholder={detail.consumo}
           name="consumo"
+          {...register("consumo", { required: true })}
         ></input>
-        <label>COSTE POR HORA (€)</label>
+        <label htmlForfor="coste">COSTE POR HORA (€)</label>
         <input
           className="billPageDetail--form--input"
-          value={Math.round(detail.coste * 100000) / 100000}
+          placeholder={detail.coste}
           name="coste"
+          {...register("coste", { required: true })}
         ></input>
-        <label for="hora">PRECIO (€/kWh)</label>
+        <label htmlForfor="precio">PRECIO (€/kWh)</label>
         <input
           className="billPageDetail--form--input"
-          value={detail.precio}
+          placeholder={detail.precio}
           name="precio"
+          {...register("precio", { required: true })}
         ></input>
-        <button className="btn btn-outline-secondary btn-lg billPageDetail--form--input">
-          SUBMIT CHANGES
-        </button>
+        <input
+          className="btn btn-outline-secondary btn-lg billPageDetail--form--input"
+          placeholder="SUBMIT CHANGES"
+          type="submit"
+        ></input>
       </form>
       <Link to="/facturas">
         <button className="btn btn-outline-danger btn-lg">
