@@ -9,7 +9,7 @@ Repositorio de la prueba tecnica.
 * [Uso](#uso)
   * [Model](#model)
   * [Rutas](#rutas)
-* [Neas](#neas)
+* [Neas](#facturas)
   * [Model](#model)
   * [Rutas](#rutas)
 
@@ -43,9 +43,8 @@ Frontend:
 
 El servidor frontend se ejecutara en el puerto por defecto de React http://localhost/3000 (Las cors estan habilitadas para 3000 y 3001 solamente)
 
-### Model
 
-## data
+## facturas
 
 ### Model
 
