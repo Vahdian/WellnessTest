@@ -1,0 +1,25 @@
+.LandingPage {
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+
+
+    &--title {
+        margin-top: 2rem;
+    }
+
+    &--text {
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &--image {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    &--span {
+        color: yellowgreen;
+        font-weight: bolder;
+    }
+}
