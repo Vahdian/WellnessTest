@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { API } from "../../shared/consts/api.const";
+import "./BillsPage.scss";
 
 export default function LandingPage() {
   const [data, setData] = useState([]);
@@ -20,7 +21,11 @@ export default function LandingPage() {
   useEffect(getAPIData, []);
 
   return (
-    <div>
+    <div className="billsPage">
+      <h1>REGISTRO DE FACTURAS</h1>
+      <button className="btn btn-outline-dark btn-lg billsPage--button">
+        + Crear nueva entrada
+      </button>
       <table className="table table-striped">
         <thead>
           <tr>
