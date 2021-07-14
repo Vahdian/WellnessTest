@@ -8,6 +8,7 @@ export default function LandingPage() {
       <img
         className="LandingPage--image"
         src="https://wellnesstg.com/wp-content/themes/wtechgroup/img/logo-Wellness-TechGroup.svg"
+        alt="Wellness tech group"
       ></img>
       <h1 className="display-1 LandingPage--title font-weight-bold">
         WELCOME TO WELLNESS ELECTRICITY

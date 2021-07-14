@@ -20,7 +20,7 @@ export default function LandingPage() {
 
   return (
     <div>
-      <table className="table table-dark table-striped">
+      <table className="table table-striped">
         <thead>
           <tr>
             <th scope="col">Fecha</th>
@@ -33,15 +33,22 @@ export default function LandingPage() {
         </thead>
         <tbody>
           {data.map((data, index) => (
-            <tr>
+            <tr key={index}>
               <td>{data.fecha}</td>
               <td>{data.hora}</td>
               <td>{data.consumo}</td>
               <td>{data.precio}</td>
               <td>{Math.round(data.coste * 1000000) / 1000000}</td>
               <td>
-                <button>Editar</button>
-                <button onClick={() => deleteEntry(data._id)}>Borrar</button>
+                <button className="btn btn-outline-secondary btn-sm">
+                  Editar
+                </button>
+                <button
+                  className="btn btn-outline-danger btn-sm"
+                  onClick={() => deleteEntry(data._id)}
+                >
+                  Borrar
+                </button>
               </td>
             </tr>
           ))}
