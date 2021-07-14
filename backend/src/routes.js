@@ -3,13 +3,15 @@ const controller = require("./controllers/controller")
 const router = express.Router();
 
 router
-    .route("/data")
+    .route("/api/data")
     .get(controller.getData)
     .post(controller.createData)
+    
 
-router.route("/data/:id")
+router.route("/api/data/:id")
     .get(controller.getOneData)
     .delete(controller.deleteData)
     .put(controller.updateData)
+    
 
 module.exports = router;

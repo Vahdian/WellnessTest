@@ -65,7 +65,7 @@ async function deleteData(req, res, next) {
 
   async function updateData(req, res, next) {
     const id = req.params.id;
-    User.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+    Data.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
       .then((data) => {
         if (!data) {
           res.status(404).send({
