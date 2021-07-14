@@ -1,14 +1,65 @@
-<h2>Instrucciones de uso</h2>
-<p>Clonar el repositorio. git clone repo
+# Wellness Test
 
-Instalar dependencias. npm install
+Repositorio de la prueba tecnica.
+
+[Testeo de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+
+## Tabla de contenido
+
+* [Uso](#uso)
+  * [Model](#model)
+  * [Rutas](#rutas)
+* [Facturas](#facturas)
+  * [Model](#model)
+  * [Rutas](#rutas)
+
+
+## Uso
+
+Clonar el repositorio.
+`git clone repo`
+
+
+Instalar dependencias (frontend y backend)
+`cd frontend`
+`npm install`
+`cd backend`
+`npm install`
+
 
 Iniciar el proyecto.
 
-Producción: npm run start
+Para el backend podemos iniciarlo en ambos modos:
 
-Desarrollo: npm run dev
+Producción: `npm run start`
 
-Test: npm run test</p>
+Desarrollo: `npm run dev`
 
-<h2>Instrucciones de uso</h2>
+El servidor backend esta por defecto en el puerto http://localhost/5555
+
+Frontend:
+
+`npm start`
+
+El servidor frontend se ejecutara en el puerto por defecto de React http://localhost/3000 (Las cors estan habilitadas para 3000 y 3001 solamente)
+
+
+## Facturas
+
+### Model
+
+Atributos:
+
+* fecha
+* hora
+* consumo
+* coste
+* precio
+
+### Rutas
+
+* Ver todas las entradas de datos: GET /data
+* Ver una factura por id: GET /data/:id
+* Crear nueva entrada: POST /data/:id
+* Actualizar datos: PUT /data/:id
+* Borrar una entrada por id: DELETE /data/:id
