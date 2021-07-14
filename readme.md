@@ -2,17 +2,17 @@
 
 Repositorio de la prueba tecnica.
 
-He usado el stack MERN; He cargado los datos proporcionados en .CSV en una base de datos en la nube (Mongo Atlas) y he creado una API con Node y expressJs que
+Para llevar a cabo la prueba he usado el stack MERN; He cargado los datos proporcionados en .CSV en una base de datos en la nube (Mongo Atlas) y he creado una API con Node y expressJs que
 interactua con un front de React.
 
-Librerias que he usado en Node:
+Packages que he usado en Node:
 -Express
 -Nodemon
 -Cors
 -Dotenv
 -Mongoose
 
-Librerias que he usado en React:
+Packages que he usado en React:
 -Axios
 -React-router-dom
 -node-sass (para poder usar SASS en el CSS)
@@ -40,7 +40,7 @@ Instalar dependencias (frontend y backend)
 `cd backend`
 `npm install`
 
-(Se que los archivos .env que he usado no se deberian subir al repo, pero bueno asi os facilito la comprobacion)
+(Se que los archivos .env que he usado no se deberian subir al repo, pero no los he metido en el gitignore asi os facilito la comprobacion)
 
 Iniciar el proyecto.
 
