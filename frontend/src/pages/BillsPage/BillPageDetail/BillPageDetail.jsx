@@ -19,8 +19,8 @@ export default function BillPageDetail() {
 
   return (
     <div className="billPageDetail">
+      <h1>BILL DETAILS</h1>
       <form className="billPageDetail--form">
-        <h1>BILL DETAILS:</h1>
         <label for="fecha">FECHA</label>
         <input
           className="billPageDetail--form--input"
