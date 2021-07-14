@@ -8,8 +8,21 @@ async function getData(req, res, next){
     next()
     }
     catch{
-        console.info("no va")
+        console.info("Couldnt retrieve data")
     }
+}
+
+async function getOneData(req, res, next){
+  const id = req.params.id;
+  try{
+  const billRequired = await Data.findById(id)
+  res.send(billRequired)
+  console.info(billRequired)
+  next()
+  }
+  catch{
+      console.info("no va")
+  }
 }
 
 async function createData(req, res, next){
@@ -67,4 +80,4 @@ async function deleteData(req, res, next) {
       });
   }
 
-module.exports = { getData, createData, deleteData, updateData}
+module.exports = { getData, createData, deleteData, updateData, getOneData}

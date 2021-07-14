@@ -8,6 +8,7 @@ router
     .post(controller.createData)
 
 router.route("/data/:id")
+    .get(controller.getOneData)
     .delete(controller.deleteData)
     .put(controller.updateData)
 

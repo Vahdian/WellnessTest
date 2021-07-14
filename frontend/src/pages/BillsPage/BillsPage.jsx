@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { API } from "../../shared/consts/api.const";
 
 export default function LandingPage() {
@@ -40,9 +41,11 @@ export default function LandingPage() {
               <td>{data.precio}</td>
               <td>{Math.round(data.coste * 1000000) / 1000000}</td>
               <td>
-                <button className="btn btn-outline-secondary btn-sm">
-                  Editar
-                </button>
+                <Link to={"/facturas/" + data._id}>
+                  <button className="btn btn-outline-secondary btn-sm">
+                    Editar
+                  </button>
+                </Link>
                 <button
                   className="btn btn-outline-danger btn-sm"
                   onClick={() => deleteEntry(data._id)}
