@@ -29,6 +29,10 @@ export default function BillPageDetail() {
 
   return (
     <div className="billPageDetail">
+      <img
+        src="https://wellnesstg.com/wp-content/themes/wtechgroup/img/logo-Wellness-TechGroup.svg"
+        alt="Wellness tech group"
+      ></img>
       <h1>EDIT BILL DETAILS</h1>
       <form className="billPageDetail--form" onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="fecha">FECHA</label>
