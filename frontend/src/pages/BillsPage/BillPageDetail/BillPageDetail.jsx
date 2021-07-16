@@ -18,7 +18,7 @@ export default function BillPageDetail() {
 
   useEffect(getAPIDataDetail, []);
 
-  const { register, handleSubmit, errors, reset } = useForm();
+  const { register, handleSubmit } = useForm();
 
   function onSubmit(facturaEditada) {
     console.log(facturaEditada);

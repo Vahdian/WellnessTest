@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { API } from "../../shared/consts/api.const";
+import { LoadingContext } from "../../core/components/Loader/context/LoadingContext";
+
 import "./BillsPage.scss";
 
 export default function LandingPage() {
+  const { setIsLoading } = useContext(LoadingContext);
   const [data, setData] = useState([]);
 
   const getAPIData = () => {
+    setIsLoading(true);
     API.get("/data").then((res) => {
-      console.log(res);
+      setIsLoading(false);
       setData(res.data);
     });
   };

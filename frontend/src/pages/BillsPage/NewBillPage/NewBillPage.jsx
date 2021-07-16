@@ -5,7 +5,7 @@ import "../BillPageDetail/BillPageDetail.scss";
 import { useForm } from "react-hook-form";
 
 export default function BillPageDetail() {
-  const { register, handleSubmit, errors, reset } = useForm();
+  const { register, handleSubmit } = useForm();
 
   function onSubmit(newFactura) {
     API.post("/data", newFactura).then((res) => {
@@ -24,14 +24,14 @@ export default function BillPageDetail() {
         <label htmlFor="fecha">FECHA</label>
         <input
           className="billPageDetail--form--input"
-          placeholder="Fecha"
+          placeholder="YYYY-MM-DD"
           name="fecha"
           {...register("fecha", { required: true })}
         ></input>
         <label htmlForfor="hora">HORA</label>
         <input
           className="billPageDetail--form--input"
-          placeholder="Hora"
+          placeholder="HH:MM"
           name="hora"
           {...register("hora", { required: true })}
         ></input>
