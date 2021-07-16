@@ -21,3 +21,12 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .billPageDetail {
+        &--form {
+            width: 90%;
+        }
+    }
+
+}
