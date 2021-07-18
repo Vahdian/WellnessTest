@@ -41,7 +41,7 @@ interactua con un front de React.
 
 <h3>Test de Endpoints</h3>
 
-[link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+[Link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
 
 ## Tabla de contenido
 
