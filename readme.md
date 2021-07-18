@@ -6,9 +6,13 @@ Para llevar a cabo la prueba he usado el stack MERN; He cargado los datos propor
 interactua con un front de React.
 
 El front consta de:
+</br>
 -Pagina de inicio desde donde acceder a los datos con un botón.
+</br>
 -Pagina con la tabla de los datos que muestra un loader mientras cargan los datos de la API.
+</br>
 -Pagina para editar los datos, donde también he incluido una representación grafica simple del precio.
+</br>
 -Pagina para crear una nueva entrada
 
 Packages que he usado en Node:
