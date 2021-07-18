@@ -5,6 +5,12 @@ Repositorio de la prueba tecnica.
 Para llevar a cabo la prueba he usado el stack MERN; He cargado los datos proporcionados en .CSV en una base de datos en la nube (Mongo Atlas) y he creado una API con Node y expressJs que
 interactua con un front de React.
 
+El front consta de:
+-Pagina de inicio desde donde acceder a los datos con un botón.
+-Pagina con la tabla de los datos que muestra un loader mientras cargan los datos de la API.
+-Pagina para editar los datos, donde también he incluido una representación grafica simple del precio.
+-Pagina para crear una nueva entrada
+
 Packages que he usado en Node:
 -Express
 -Nodemon
@@ -17,9 +23,9 @@ Packages que he usado en React:
 -React-router-dom
 -node-sass (para poder usar SASS en el CSS)
 -bootstrap
--ChartsJs (Implementacion de graficas)
+-ChartsJs (Para representacion grafica de datos)
 
-[Testeo de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+[Link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
 
 ## Tabla de contenido
 
@@ -63,7 +69,7 @@ El servidor frontend se ejecutara en el puerto por defecto de React http://local
 
 ### Modelo
 
-Atributos:
+Atributos incluidos en el modelo:
 
 - fecha
 - hora
@@ -75,6 +81,6 @@ Atributos:
 
 - Ver todas las entradas de datos: GET /data
 - Ver una factura por id: GET /data/:id
-- Crear nueva entrada: POST /data/:id
+- Crear nueva entrada: POST /data
 - Actualizar datos: PUT /data/:id
 - Borrar una entrada por id: DELETE /data/:id
