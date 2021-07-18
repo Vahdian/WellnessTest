@@ -3,7 +3,7 @@
 Repositorio de la prueba tecnica.
 
 Para llevar a cabo la prueba he usado el stack MERN; He cargado los datos proporcionados en .CSV en una base de datos en la nube (Mongo Atlas) y he creado una API con Node y expressJs que
-interactua con un front de React.
+interactua con un front de React. No completamente FULL RESPONSIVE, aunque si he adaptado la pagina incial y la de creacion con media querys para que cambien de disposición en funcion del dispositivo.
 
 <h3>El front consta de:</h3>
 </br>
