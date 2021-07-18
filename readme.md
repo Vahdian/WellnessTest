@@ -17,8 +17,9 @@ Packages que he usado en React:
 -React-router-dom
 -node-sass (para poder usar SASS en el CSS)
 -bootstrap
+-ChartsJs (Implementacion de graficas)
 
-[Testeo de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+[Testeo de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
 
 ## Tabla de contenido
 
@@ -40,7 +41,7 @@ Instalar dependencias (frontend y backend)
 `cd backend`
 `npm install`
 
-(Se que los archivos .env que he usado no se deberian subir al repo, pero no los he metido en el gitignore asi os facilito la comprobacion)
+(Se que los archivos .env que he usado no se deberian subir al repo, pero no los he metido en el gitignore asi os facilito la comprobacion del funcionamiento)
 
 Iniciar el proyecto.
 
