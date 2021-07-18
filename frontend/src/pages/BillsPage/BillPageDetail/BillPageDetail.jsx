@@ -36,7 +36,7 @@ export default function BillPageDetail() {
         ></img>
         <h1>EDIT BILL DETAILS</h1>
         <form
-          className="billPageDetail--form"
+          className="billPageDetail--form animatedContent"
           onSubmit={handleSubmit(onSubmit)}
         >
           <label htmlFor="fecha">FECHA</label>
@@ -82,7 +82,7 @@ export default function BillPageDetail() {
         </form>
         <Link to="/facturas">
           <button className="btn btn-outline-danger btn-lg">
-            Back to the main page
+            Volver a la pagina anterior
           </button>
         </Link>
       </div>

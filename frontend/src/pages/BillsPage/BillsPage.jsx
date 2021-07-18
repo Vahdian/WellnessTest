@@ -25,7 +25,7 @@ export default function LandingPage() {
   useEffect(getAPIData, []);
 
   return (
-    <div className="billsPage">
+    <div className="billsPage animatedContent">
       <h1>REGISTRO DE FACTURAS</h1>
       <Link to="/nuevo">
         <button className="btn btn-outline-dark btn-lg billsPage--button">

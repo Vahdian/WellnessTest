@@ -14,7 +14,7 @@ export default function BillPageDetail() {
   }
 
   return (
-    <div className="billPageDetail">
+    <div className="billPageDetail animatedContentFaster">
       <img
         src="https://wellnesstg.com/wp-content/themes/wtechgroup/img/logo-Wellness-TechGroup.svg"
         alt="Wellness tech group"
@@ -64,7 +64,7 @@ export default function BillPageDetail() {
       </form>
       <Link to="/facturas">
         <button className="btn btn-outline-danger btn-lg">
-          Back to the main page
+          Volver a la pagina anterior
         </button>
       </Link>
     </div>
