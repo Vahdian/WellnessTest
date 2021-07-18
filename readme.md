@@ -5,7 +5,7 @@ Repositorio de la prueba tecnica.
 Para llevar a cabo la prueba he usado el stack MERN; He cargado los datos proporcionados en .CSV en una base de datos en la nube (Mongo Atlas) y he creado una API con Node y expressJs que
 interactua con un front de React.
 
-El front consta de:
+<h5>El front consta de:</h5>
 </br>
 -Pagina de inicio desde donde acceder a los datos pulsando un botón.
 </br>
@@ -15,7 +15,8 @@ El front consta de:
 </br>
 -Pagina para crear una nueva entrada
 
-Packages que he usado en Node:
+<h5>Packages que he usado en Node:</h5>
+</br>
 -Express
 </br>
 -Nodemon
@@ -26,7 +27,8 @@ Packages que he usado en Node:
 </br>
 -Mongoose
 
-Packages que he usado en React:
+<h5>Packages que he usado en React:</h5>
+</br>
 -Axios
 </br>
 -React-router-dom
