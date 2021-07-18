@@ -38,8 +38,8 @@ interactua con un front de React.
 -bootstrap
 </br>
 -ChartsJs (Para representacion grafica de datos)
-
-[Link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+</br>
+Aqui puedes ver el [link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
 
 ## Tabla de contenido
 
