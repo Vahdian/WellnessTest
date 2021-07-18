@@ -1,6 +1,6 @@
 const express = require("express");
-const config = require("./config")
-const loader = require("./loaders/loader")
+const config = require("./config");
+const loader = require("./loaders/loader");
 
 function serverBootstraping() {
     const app = express();
