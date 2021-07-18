@@ -7,26 +7,34 @@ interactua con un front de React.
 
 El front consta de:
 </br>
--Pagina de inicio desde donde acceder a los datos con un botón.
+-Pagina de inicio desde donde acceder a los datos pulsando un botón.
 </br>
 -Pagina con la tabla de los datos que muestra un loader mientras cargan los datos de la API.
 </br>
--Pagina para editar los datos, donde también he incluido una representación grafica simple del precio.
+-Pagina para editar los datos, donde también he incluido una representación grafica simple comparando el precio.
 </br>
 -Pagina para crear una nueva entrada
 
 Packages que he usado en Node:
 -Express
+</br>
 -Nodemon
+</br>
 -Cors
+</br>
 -Dotenv
+</br>
 -Mongoose
 
 Packages que he usado en React:
 -Axios
+</br>
 -React-router-dom
+</br>
 -node-sass (para poder usar SASS en el CSS)
+</br>
 -bootstrap
+</br>
 -ChartsJs (Para representacion grafica de datos)
 
 [Link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
@@ -34,8 +42,6 @@ Packages que he usado en React:
 ## Tabla de contenido
 
 - [Uso](#uso)
-  - [Model](#model)
-  - [Rutas](#rutas)
 - [Facturas](#facturas)
   - [Model](#model)
   - [Rutas](#rutas)
