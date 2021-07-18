@@ -39,7 +39,8 @@ interactua con un front de React.
 </br>
 -ChartsJs (Para representacion grafica de datos)
 </br>
-Aqui puedes ver el [link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
+
+Aqui tambien dejo el [link de los test de endpoints de la API con Postman](https://www.postman.com/collections/4bba4209389da8d17a50)
 
 ## Tabla de contenido
 
